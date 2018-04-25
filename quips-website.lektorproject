@@ -1,0 +1,4 @@
+[project]
+name = quips-website
+locale = en_US
+url_style = absolute
