@@ -1,0 +1,48 @@
+<!-- Builds the part of the page that is a description of the status of the
+     project. This includes the lanugage, status, and urls for documentation
+     and code hosting. -->
+{% macro render_project_code_info(page) %}
+{% if hosted_code %}
+<a href={{ page.hosted_code }}>page.hosted_code.host</a>
+{% endif %}
+{% if primary_language %}
+<div class="primary-language">
+
+</div>
+{% endif %}
+{% if production_ready %}
+
+{% endif %}
+{% if in_development %}
+
+{% endif %}
+{% endmacro %}
+
+<!-- Builds the part of the page that is a general overview of the project.
+     This includes the purpose, description, and todo segments. -->
+{% macro render_project_page(page) %}
+<p>
+  <h2>
+    Purpose:
+  </h2>
+  {{ page.purpose }}
+</p>
+<p>
+  <h2>
+    General:
+  </h2>
+  {{ page.general }}
+</p>
+<p>
+  <h2>
+    Todo:
+  </h2>
+  {{ page.todo }}
+</p>
+{% endmacro %}
+
+<!-- Builds the part of the project page that contains an arbitrary number of
+     code snippets along with a description of the snippet. -->
+{% macro render_code_descriptions(page) %}
+
+{% endmacro %}

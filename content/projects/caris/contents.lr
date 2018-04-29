@@ -1,7 +1,54 @@
-_model: project
+_model: project-page
 ---
 title: CARIS
 ---
-hosted_code: https://github.com/InfinityPhase/CARIS
+documentation_url: https://example.com
+---
+general: Woot
+---
+hosted_code: https://github.com/infinityphase/caris
 ---
 primary_language: Java
+---
+production_ready: yes
+---
+purpose: To be cool
+---
+todo: Everything
+---
+code_description:
+
+#### code-description ####
+filename: why.java
+----
+line_number: 26
+----
+code:
+
+```java
+public static String why() {
+    while( true ) {
+        System.out.println("WHYYYY\n");
+    }
+}
+```
+----
+explanation: Prints `WHYYYY` repeatedly. Infinitely.
+#### code-description ####
+filename: hah.py
+----
+line_number: 57
+----
+code:
+
+```python
+def chuckle(times):
+    iter = 0
+    while(iter < times):
+        print("hah")
+        iter = iter + 1
+```
+----
+explanation: Chuckles for a while
+---
+short_description: Computational Automated Responsive Intelligence System
